@@ -36,19 +36,16 @@ header {
 }
 
 .logo {
+    padding: 0%;
+}
+
+.logo img {
+    transition: 0.3s;
     width: 10%;
 }
 
-/* selects all a tag in the header instead change it to class specific for the top */
-
-header a:hover {
-    font-size: 20px;
-}
-
-header h1 {
-    text-align: center;
-    color: black;
-    transition: 0.3s;
+.logo img:hover {
+    width: 5%;
 }
 
 /* Navigation */
@@ -170,4 +167,9 @@ footer ul li a {
 
 footer ul li a:hover {
     color: rgba(0, 0, 0, 0.5);
+}
+
+/* Login page */
+.login {
+    background-color: #2EAF7D;
 }
