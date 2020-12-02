@@ -1,0 +1,173 @@
+/* Importing fonts */
+@font-face {
+    font-family: openSansRegular;
+    src: url(../assets/font/OpenSansCondensed-Light.woff);
+}
+
+@font-face {
+    font-family: openSansBold;
+    src: url(../assets/font/OpenSansCondensed-Bold.woff);
+    font-weight: bold;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: openSansRegular;
+}
+
+/* Global tags */
+.container {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    background-color: #449342;
+}
+
+.logo {
+    width: 10%;
+}
+
+/* selects all a tag in the header instead change it to class specific for the top */
+
+header a:hover {
+    font-size: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+    transition: 0.3s;
+}
+
+/* Navigation */
+nav {
+    background-color: #2EAF7D;
+    text-align: center;
+}
+
+nav ul {
+    margin-bottom: 0%;
+}
+
+nav ul li {
+    margin: 0% 5% 0% 5%;
+    display: inline;
+
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Nav dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Recent articles */
+.recent-articles {
+    display: inline-block;
+    background-color: green;
+    width: 50%;
+}
+
+.recent-articles ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* News content */
+.recent-news {
+    background-color: #449342;
+    width: 30%;
+    float: right;
+}
+
+.recent-news ul {
+    margin: 0;
+    padding: 0%;
+}
+
+.article {
+    border-bottom: solid black 1px;
+}
+
+/* Article Title */
+.article h1 {
+    font-size: 24px;
+}
+
+/* Article body paragraph */
+.article p {
+    font-size: 16px;
+}
+
+/* Article Image */
+.article img {
+    width: 10%;
+}
+
+/* Footer */
+footer {
+    background-color: #2EAF7D;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+footer li {
+    display: inline;
+}
+
+footer ul li a {
+    margin: 0% 3%;
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
